@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <!--grid网格-->
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 bg-success">
+            <h1>一行一列</h1>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 bg-danger">
+            <h1>一行二列</h1>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 bg-warning">
+            <h1>二行一列</h1>
+        </div>
+        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 bg-info">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 bg-info">
+                    <h4>嵌套二行第一行第一列</h4>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 bg-info">
+                    <h4>嵌套二行第一行第二列</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg-danger">
+                    <h4>嵌套第二行第二列第二行</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg-primary">
+            <h1>三行二列</h1>
+        </div>
+    </div>
+    <!--文字颜色和背景颜色-->
+    <p class="text-muted">柔和的颜色</p>
+    <p class="text-primary">重要的颜色</p>
+    <p class="text-info">一般提示信息</p>
+    <p class="text-success">成功的颜色</p>
+    <p class="text-warning">警告的颜色</p>
+    <p class="text-danger">危险的颜色</p>
+    <p class="text-secondary">副标题</p>
+
+    <p class="bg-primary text-white">重要的背景</p>
+
+    <!--表格-->
+    <table class="table table-hover table-striped">
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>籍贯</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>张三</td>
+            <td class="bg-success">28</td>
+            <td>四川</td>
+        </tr>
+        <tr class="bg-primary">
+            <td>李四</td>
+            <td class="bg-success">25</td>
+            <td>重庆</td>
+        </tr>
+        <tr>
+            <td>王五</td>
+            <td class="bg-success">28</td>
+            <td>贵州</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!--按钮-->
+    <div STYLE="margin: 20px">
+        <button class="btn btn-primary ">点我</button>
+        <button class="btn btn-outline-success ">点我</button>
+    </div>
+
+    <!--表单-->
+    <form action="" method="post" role="form">
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <td class="text-right" style="vertical-align: middle !important;">账号:</td>
+                    <td class="text-left"><input type="text" name="myname" id="myname" class="form-control" value="" placeholder="字母和数字结合"
+                               required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-right" style="vertical-align: middle !important;">邮箱:</td>
+                    <td class="text-left"><input type="email" name="myemail" id="myemail" class="form-control" value="" placeholder="输入邮箱"
+                                                 required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-right" style="vertical-align: middle !important;">性别:</td>
+                    <td class="text-left">
+                        <label  class="radio-inline"><input type="radio" name="sextype" value="男">
+                        </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label  class="radio-inline"><input type="radio" name="sextype"  value="女">
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="text-right" style="vertical-align: middle !important;">爱好:</td>
+                    <td class="text-left form-check form-check-inline">
+                        <laber><input type="checkbox" name="myhobby"  class="form-check-input" value="">旅游
+                        </laber>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <laber><input type="checkbox" name="myhobby"  class="form-check-input" value="">游泳
+                        </laber>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <laber><input type="checkbox" name="myhobby"  class="form-check-input" value="">爬山
+                        </laber>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-right" style="vertical-align: middle !important;">职业:</td>
+                    <td class="text-left">
+                        <select  id="myjob" class="form-control">
+                            <option>java程序员</option>
+                            <option>精算师</option>
+                            <option>数据分析师</option>
+                            <option>区块链开发者</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="text-center">
+                        <button type="submit" class="btn btn-primary">提交</button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+
+    </form>
+
+    <!--导航栏-->
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link" href="a">新闻</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="a">社会</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="a">科技</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="a">历史</a>
+        </li>
+    </ul>
+
+    <!--下拉菜单-->
+    <div style="margin: 20px">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            我是下拉菜单
+        </button>
+        <div class="dropdown-menu">
+            <a href="a" class="dropdowm-item">1</a>
+            <a href="a" class="dropdowm-item">2</a>
+            <a href="a" class="dropdowm-item">3</a>
+            <div class="dropdown-divider"></div>
+            <a href="a" class="dropdowm-item">4</a>
+
+        </div>
+    </div>
+    <!--卡片控件-->
+    <div class="card" style="margin: 20px">
+        <div class="card-header bg-info text-white"> 头部标题</div>
+        <div class="card-body">
+            <h1>功能如下</h1>
+            <ul class="list-group">
+                <li class="list-group-item">用户管理</li>
+                <li class="list-group-item">操作日志</li>
+                <li class="list-group-item">角色权限</li>
+                <li class="list-group-item">业务报表</li>
+            </ul>
+        </div>
+        <div class="card-footer">底部信息</div>
+
+    </div>
+
+    <!--徽章-->
+    <div style="margin: 20px">
+        <span class="badge badge-primary ">主要</span>
+        <button type="button" class="btn btn-primary">messages <span class="badge badge-light">4</span></button>
+    </div>
+    <!--font awesome 图标-->
+
+    <div style="margin: 20px">
+      <button type="button" class="btn btn-info btn-sm"><i class="fa fa-plus-square"></i> 添 加</button>
+    </div>
+</div>
+</body>
+</html>
