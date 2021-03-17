@@ -22,9 +22,9 @@ spring:
 
 ### 数据库
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/mydemo?serverTimeZone=UTC&userSSL=false
-    data-username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mydemo?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&userSSL=false
+    username: root
     password: root
 
 ### Druid数据源配置
